@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyGame</title>
+    <link rel="icon" href="./res/images/calculator.png" type="image/icon type">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <audio id="timerSound">
+        <source src="./res/audio/a-kitchen-timer-55420.mp3">
+    </audio>
+    <audio id="rightSound">
+        <source src="./res/audio/success-fanfare-trumpets-6185.mp3">
+    </audio>
+    <audio id="wrongAnswer">
+        <source src="./res/audio/videogame-death-sound-43894.mp3">
+    </audio>
+    <div class="gameBody">
+        <div class="gamePaner">
+            <div class="pannerContent">
+                <h1 id="caption">Easy Game</h1>
+                <button id="start" onclick="start()">Start</button>
+            </div>
+        </div>
+        <h3 id="score" style="float: left;">Score: 3</h3>
+        <h3 id="callDownTimer" style="float: right;">15</h3>
+        <h1 id="questionNumber" style="width: 1200px;">Qwestion Number:</h1>
+        <div class="qwestion">
+            <p id="qwestion">qwestion</p>
+            <button class="answer" id="answer1" onclick="game(document.getElementById('answer1').innerHTML)">answer</button>
+            <button class="answer" id="answer2" onclick="game(document.getElementById('answer2').innerHTML)">answer</button>
+            <button class="answer" id="answer3" onclick="game(document.getElementById('answer3').innerHTML)">answer</button>
+            <button class="answer" id="answer4" onclick="game(document.getElementById('answer4').innerHTML)">answer</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
